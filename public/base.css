@@ -363,12 +363,21 @@ a:hover {
   padding: 20px 0;
 }
 
+#commands a {
+  color: #666;
+}
+
 #commands p{
   line-height: 22px;
 }
 
 #commands h4 {
   margin: 40px 0 20px 0;
+}
+
+.commandLine {
+  color: #666;
+  font-size: 14px;
 }
 
 /*------ PANEL4 ------*/
