@@ -2,6 +2,10 @@
   "name": "ito_static",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.1.x"
+  },
   "dependencies": {
     "connect": "3.3.x",
     "serve-static": "1.8.x"
