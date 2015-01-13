@@ -348,10 +348,27 @@ a:hover {
 #moreCommands {
   padding: 0 0 20px 0;
   text-align: center;
+  cursor: pointer;
 }
 
 #p3icon {
   height: 20px;
+}
+
+#commands {
+  display: none;
+}
+
+#commands .row {
+  padding: 20px 0;
+}
+
+#commands p{
+  line-height: 22px;
+}
+
+#commands h4 {
+  margin: 40px 0 20px 0;
 }
 
 /*------ PANEL4 ------*/
