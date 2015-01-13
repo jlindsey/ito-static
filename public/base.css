@@ -1,0 +1,560 @@
+/* ----------- CSS RESET ----------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------- CLEARFIX ----------- */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+/* ----------- FONT FACE ----------- */
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('BEBAS___-webfont.eot');
+    src: url('BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BEBAS___-webfont.woff') format('woff'),
+         url('BEBAS___-webfont.ttf') format('truetype'),
+         url('BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('OpenSans-Italic-webfont.eot');
+    src: url('OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Italic-webfont.woff') format('woff'),
+         url('OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ----------- BEGIN CSS ----------- */
+
+body {
+  font-family: "open_sansregular", helvetica, arial, sans-serif ;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'bebasregular', helvetica, arial, sans-serif;
+}
+
+h2, h3, h4 {
+  word-spacing: 3px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  word-spacing: 5px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e2e2e2;
+}
+
+.blue {
+  color: #20ade4;
+}
+
+.green {
+  color: #9bcb3b;
+}
+
+.row {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*------ NAV ------*/
+#nav {
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+}
+
+#navLogo {
+  background: url("logo_nav.png") no-repeat center center;
+  text-indent: -9999px;
+  display: block;
+  width: 120px;
+  height: 44px;
+  background-size: 100% auto;
+}
+
+#navList {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  color: #fff;
+  list-style-type: none;
+  padding: 0;
+}
+
+#navList li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+}
+
+/*------ HEADER ------*/
+
+#header {
+  background-image: url("header.jpg");
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;         
+  -moz-background-size: cover;       
+  -o-background-size: cover;
+  background-color: #000;
+  color: #fff;
+  height: 700px;
+  position: relative;
+}
+
+#header .row {
+  padding-top: 300px;
+}
+
+#h1Logo {
+  height: 45px;
+  margin-left: 10px;
+}
+
+#header p {
+  font-family: 'open_sansitalic', helvetica, arial, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#stackRow {
+  padding: 0;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+#slackLogo {
+  width: 150px;
+  float: right;
+}
+
+/*------ PANEL2 ------*/
+
+#panel2 {
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0;
+  color: #404040;
+}
+
+#bigIcon {
+  position: absolute;
+  width: 250px;
+  top: -100%;
+}
+
+#p2Text {
+  text-align: right;
+}
+
+#p2Logo {
+  height: 18px;
+  margin-right: 5px;
+}
+
+/*------ PANEL3 ------*/
+
+#panel3 {
+  background-color: #f5f5f5;
+  color: #404040;
+}
+
+#panel3 .row {
+  padding: 70px 0;
+}
+
+#leftColumn, #rightColumn {
+  float: left;
+  width: 50%;
+}
+
+#leftColumn h2 {
+  font-size: 48px;
+  line-height: 55px;
+  width: 480px;
+}
+
+#leftColumn h3 {
+  margin-top: 100px;
+}
+
+#p3Logo {
+  height: 45px;
+  margin: 0 5px;
+}
+
+.workBox {
+  margin: 20px 0;
+}
+
+.boxTop { 
+  background-color: #fff;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.boxBottom {
+  background-color: #e5186e;
+  padding: 10px 15px;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.picture {
+  width: 45px;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.picture, .picInfo, .name, .time {
+  display: inline-block;
+}
+
+.picture, .picInfo {
+  vertical-align: top;
+}
+
+.picInfo { 
+  margin-left: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.time {
+  color: #828282;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+#moreCommands {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+#p3icon {
+  height: 20px;
+}
+
+/*------ PANEL4 ------*/
+
+#panel4 {
+  background-color: #000;
+  background-image: url("vidPanel.jpg");
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;         
+  -moz-background-size: cover;       
+  -o-background-size: cover;
+  background-color: #000;
+  color: #fff;
+  padding: 200px 0;
+  text-align: center;
+}
+
+#demo {
+  margin: 0 auto;
+}
+
+#p4ito, #p4slack {
+  width: 100px;
+}
+
+#p4ito, #p4slack, #panel4 h3 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#panel4 h3 {
+  font-size: 40px;
+  margin: 0 10px;
+}
+
+#panel4 h2 {
+  margin-top: 20px;
+  word-spacing: 5px;
+}
+
+/*------ PANEL5 ------*/
+
+#panel5 {
+  color: #404040;
+  padding: 70px 0;
+  text-align: center;
+}
+
+#panel5 h2, #panel5 button {
+  display: inline-block;
+}
+
+button {
+  border: none;
+  background-color: #000;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 100px;
+}
+
+#p5Logo {
+  height: 35px;
+  margin: 0 5px;
+}
+
+/*------ FOOTER ------*/
+
+#footer {
+  background-color: #07061b;
+  color: #fff;
+  padding: 25px;
+}
+
+#footerLeft {
+  float: left;
+}
+
+#footerRight {
+  float: right;
+}
+
+#footer h4 {
+  font-size: 11px;
+}
+
+#footer a {
+  margin-right: 15px;
+}
+
+#footerLogo {
+  height: 10px;
+  margin: 0 5px 0 10px;
+}
+
+#twitter {
+  width: 25px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  #panel5 h2, #panel5 button {
+    display: block;
+  }
+
+  #panel5 button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  #bigIcon {
+    position: static;
+    top: initial;
+    margin: 20px auto;
+    display: block;
+  }
+
+  #p2Text {
+    text-align: center;
+  }
+
+  #leftColumn, #rightColumn {
+    float: none;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  #leftColumn h2 {
+    width: 100%;
+  }
+
+  #leftColumn h3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  #h1Logo {
+    height: 32px;
+  }
+
+  #p2Text h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin: 20px 0;
+  }
+
+  #leftColumn h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  #p3Logo {
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #navList li {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+  #header .row {
+    padding-top: 250px;
+  }
+
+  #leftColumn, #rightColumn {
+    width: 100%;
+  }
+
+  #panel5 h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  #p5Logo {
+    height: 22px;
+  }
+
+  #footerLeft, #footerRight {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #navList {
+    position: static;
+    margin-top: 10px;
+  }
+
+  #navList li {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .commandText {
+    font-size: 12px;
+  }
+}
+
+
+
